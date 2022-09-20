@@ -32,6 +32,7 @@ const handler = async function logFromFrontend(
         browser: true, // mark the log as comming from the browser
       })
     }
+    console.log({level, data, ctx})
     res.status(204).end()
   } catch (e) {
     res.status(500).end()
